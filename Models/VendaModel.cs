@@ -37,8 +37,10 @@ namespace SistemaVenda.Models
         {
             DAL objDAL = new DAL();
             string dataVenda = DateTime.Now.Date.ToString("yyyy/MM/dd");
-            string sql = "insert into Venda (data, total, vendedor_id, cliente_id) values " +
+            string sql = "insert into Venda (data, total, Vendedor_id, Cliente_id) values " +
                             $"('{dataVenda}', {Total.ToString().Replace(",",".")}, {Vendedor_Id}, {Cliente_Id})";
+
+            objDAL.ExecutarComandoSQL(sql);
 
             //Recuperar o ID da venda
             sql = $"select id from Venda where data='{dataVenda}' and Vendedor_Id={Vendedor_Id} and Cliente_Id={Cliente_Id} order by id desc limit 1";
@@ -56,8 +58,6 @@ namespace SistemaVenda.Models
                 
                 objDAL.ExecutarComandoSQL(sql);
             }
-            
-            objDAL.ExecutarComandoSQL(sql);
         }
     }
 }
