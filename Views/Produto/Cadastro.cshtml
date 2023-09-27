@@ -13,7 +13,18 @@
     <br>
     <div class="form-group">
         <label>Descrição</label>
-        <input type="text" asp-for="Descricao" class="form-control" value="@try {@ViewBag.Produto.Descricao} catch { }"/>
+        @{
+            var vDescricao = "";
+            try
+            {
+                vDescricao = @ViewBag.Produto.Descricao;
+            }
+            catch { }
+        }
+
+        @Html.TextArea("Descricao", vDescricao, new {@class="form-control"}) 
+        
+        @* <input type="text" asp-for="Descricao" class="form-control" value="@try {@ViewBag.Produto.Descricao} catch { }"/> *@
         <span asp-validation-for="Descricao" class="text-danger"></span>
     </div>
     <br>
@@ -31,15 +42,57 @@
     <br>
     <div class="form-group">
         <label>Unidade da Medida</label>
-        <input type="text" asp-for="Unidade_Medida" class="form-control" value="@try {@ViewBag.Produto.Unidade_Medida} catch { }"/>
+        @* <input type="text" asp-for="Unidade_Medida" class="form-control" value="@try {@ViewBag.Produto.Unidade_Medida} catch { }"/> *@
+
+        @{
+            var vUnidadeMedida = "";
+
+            try
+            {
+                vUnidadeMedida = ViewBag.Produto.Unidade_Medida;
+            }
+            catch { }
+        }
+
+        <select asp-for="Unidade_Medida" class="form-control">
+
+            @{
+                if (vUnidadeMedida != "")
+                {
+                    <option value="@vUnidadeMedida" selected>@vUnidadeMedida</option>
+                }
+            }
+
+            <option value="un">un</option>
+            <option value="kg">kg</option>
+            <option value="g">g</option>
+            <option value="lt">lt</option>
+        </select>
         <span asp-validation-for="Unidade_Medida" class="text-danger"></span>
     </div>
     <br>
     <div class="form-group">
-        <label>Link da Foto</label>
+        <label>Foto</label>
+        <div>
+        @try
+        {
+            <img src="@try {@ViewBag.Produto.Link_Foto} catch { }" width="150px" height="150px" />
+        } 
+        catch { }
+        </div>
+
         <input type="text" asp-for="Link_Foto" class="form-control" value="@try {@ViewBag.Produto.Link_Foto} catch { }"/>
         <span asp-validation-for="Link_Foto" class="text-danger"></span>
     </div>
     <br>
     <button type="submit" class="btn btn-block btn-success">Registrar</button>
 </form>
+<br>
+    <button type="button" class="btn btn-block btn-primary" onclick="Voltar()">Listagem de Produtos</button>
+
+<script>
+    function Voltar()
+    {
+        window.location.href = '../../Produto/Index';
+    }
+</script>

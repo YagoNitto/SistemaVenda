@@ -21,10 +21,10 @@ namespace SistemaVenda.Models
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Informe o preço unitário do Produto")]
-        public decimal Preco_Unitario { get; set; }
+        public decimal? Preco_Unitario { get; set; }
 
         [Required(ErrorMessage = "Informe a quantidade de estoque do Produto")]
-        public decimal Quantidade_Estoque { get; set; }
+        public decimal? Quantidade_Estoque { get; set; }
 
         [Required(ErrorMessage = "Informe a unidade de medida do Produto")]
         public string Unidade_Medida { get; set; }
@@ -87,8 +87,8 @@ namespace SistemaVenda.Models
             {
                 sql = $"update Produto set nome='{Nome}', " + 
                         $"descricao='{Descricao}', " +
-                        $"preco_unitario='{Preco_Unitario}', " +
-                        $"quantidade_estoque='{Quantidade_Estoque}'," +  
+                        $"preco_unitario={Preco_Unitario.ToString().Replace(",",".")}, " +
+                        $"quantidade_estoque={Quantidade_Estoque.ToString().Replace(",",".")}," +  
                         $"unidade_medida='{Unidade_Medida}', " +
                         $"link_foto='{Link_Foto}' " +
                         $"where id = '{Id}'";
@@ -96,7 +96,8 @@ namespace SistemaVenda.Models
             else
             {
                 sql = $"insert into Produto(nome, descricao, preco_unitario, quantidade_estoque, unidade_medida, link_foto) values " +
-                    $"('{Nome}', '{Descricao}', '{Preco_Unitario}', '{Quantidade_Estoque}', '{Unidade_Medida}', '{Link_Foto}')";
+                    $"('{Nome}', '{Descricao}', {Preco_Unitario.ToString().Replace(",",".")}, '{Quantidade_Estoque.ToString().Replace(",",".")}', " +
+                    $"'{Unidade_Medida}', '{Link_Foto}')";
             }
             objDAL.ExecutarComandoSQL(sql);
         }
