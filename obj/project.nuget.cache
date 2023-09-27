@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MA4YZj0Hp9hPuYpLnlyVn9KhfXWyAbC0d2IJ4vANoTcoDS0+g6olMsrAciBEuGONB1XjXNmsMDmIm19gETCKRA==",
+  "dgSpecHash": "O9jdJYgLiD5yLcRhMRfL3Fl85Jazv717Fg3TQPoEtD47SeivnPY8A/M5ufriJsxnHi7YgnJvtyXYsn9nwC+lqQ==",
   "success": true,
   "projectFilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/SistemaVenda.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "/home/yago/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/home/yago/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "/home/yago/.nuget/packages/mysql.data/8.1.0/mysql.data.8.1.0.nupkg.sha512",
+    "/home/yago/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/home/yago/.nuget/packages/portable.bouncycastle/1.9.0/portable.bouncycastle.1.9.0.nupkg.sha512",
     "/home/yago/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/home/yago/.nuget/packages/system.configuration.configurationmanager/4.4.1/system.configuration.configurationmanager.4.4.1.nupkg.sha512",

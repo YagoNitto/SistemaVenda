@@ -5,7 +5,7 @@
 <br>
 
 <form asp-controller="Venda" asp-action="Registrar">
-<input type="hidden" asp-for="Id" value="@try {@ViewBag.Venda.Id} catch { }">
+@* <input type="hidden" asp-for="Id" value="@try {@ViewBag.Venda.Id} catch { }"> *@
 
     <div class="form-group">
         <label>Cliente</label>
@@ -40,7 +40,7 @@
                 @{
                     foreach (var item in (List<ProdutoModel>)ViewBag.ListaProdutos)
                     {
-                        <option value="@item.Id">@item.Nome</option>
+                        <option value="@item.Id">@item.Nome | @item.Preco_Unitario</option>
                     }
                 }
             </select>
@@ -72,6 +72,15 @@
 
     <br>
 
+    <div style="float: left; font-size: 22px;">Total: R$ </div>
+    <div style="float: left; font-size: 22px; margin-left: 5px;" id="divTotal"> 0.00</div>
+
+    <input type="hidden" id="txtTotal" asp-for="Total">
+
+    <br><br><br>
+
+    <textarea asp-for="ListaProdutos" id="ListaProdutosJSON" style="display: none;"></textarea>
+
     <button type="submit" class="btn btn-block btn-success">Registrar</button>
 </form>
 
@@ -82,25 +91,38 @@
     var CodigoProduto = document.getElementById("sltProduto");
     var QtdeProduto = document.getElementById("txtQuantidade");
     var ListaProdutos = document.getElementById("listaProdutos");
+    var TotalVenda = document.getElementById("divTotal");
+    var txtTotal = document.getElementById("txtTotal");
+    var ListaProdutosJSON = document.getElementById("ListaProdutosJSON");
 
     function AdicionarProduto()
     {
-        Itens.Produto.push({
+        var DescricaoPreco = CodigoProduto.options[CodigoProduto.selectedIndex].text;
+        var arrayDescricaoPreco = DescricaoPreco.split('|');
+        var total = (arrayDescricaoPreco[1].replace(",",".") * QtdeProduto.value);
+        total = Math.round(total * 100) / 100;
+
+        Itens.Produtos.push({
             "CodigoProduto": CodigoProduto.value,
-            "DescricaoProduto": CodigoProduto.options[CodigoProduto.selectedIndex].text,
+            "DescricaoProduto": arrayDescricaoPreco[0],
             "QtdeProduto": QtdeProduto.value,
-            "PrecoUnitario": "0",
-            "Total": "0"
+            "PrecoUnitario": arrayDescricaoPreco[1],
+            "Total": total
         });
+
+        ListaProdutosJSON.innerHTML = JSON.stringify(Itens.Produtos);
 
         var produto = "<tr>" + 
             "<td>" + CodigoProduto.value + "</td>" + 
-            "<td>" + CodigoProduto.options[CodigoProduto.selectedIndex].text + "</td>" + 
+            "<td>" + arrayDescricaoPreco[0] + "</td>" + 
             "<td>" + QtdeProduto.value + "</td>" + 
-            "<td>" + CodigoProduto.value + "</td>" + 
-            "<td>" + CodigoProduto.value + "</td>" + 
+            "<td> R$ " + arrayDescricaoPreco[1] + "</td>" + 
+            "<td> R$ " + total + "</td>" + 
             "</tr>";
 
         ListaProdutos.innerHTML += produto;
+        var totalGeral = Math.round((TotalVenda.innerText*1 + total) * 100) / 100;
+        TotalVenda.innerHTML = totalGeral;
+        txtTotal.value = totalGeral.toString().replace(".",",");
     }
 </script>
