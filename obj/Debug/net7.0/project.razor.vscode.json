@@ -24135,6 +24135,31 @@
       "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Venda/Index.cshtml",
+      "TargetPath": "Views\\Venda\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Relatorio/Index.cshtml",
+      "TargetPath": "Views\\Relatorio\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Relatorio/Vendas.cshtml",
+      "TargetPath": "Views\\Relatorio\\Vendas.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Relatorio/Grafico.cshtml",
+      "TargetPath": "Views\\Relatorio\\Grafico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Relatorio/Comissao.cshtml",
+      "TargetPath": "Views\\Relatorio\\Comissao.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

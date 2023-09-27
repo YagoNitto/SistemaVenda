@@ -82,6 +82,9 @@
     <textarea asp-for="ListaProdutos" id="ListaProdutosJSON" style="display: none;"></textarea>
 
     <button type="submit" class="btn btn-block btn-success">Registrar</button>
+    <br><br>
+    <button type="button" class="btn btn-block btn-primary" onclick="Voltar()">Listagem de Vendas</button>
+
 </form>
 
 <script>
@@ -94,6 +97,11 @@
     var TotalVenda = document.getElementById("divTotal");
     var txtTotal = document.getElementById("txtTotal");
     var ListaProdutosJSON = document.getElementById("ListaProdutosJSON");
+
+    function Voltar()
+    {
+        window.location.href = "../Venda/Index";
+    }
 
     function AdicionarProduto()
     {
