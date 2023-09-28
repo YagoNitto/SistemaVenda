@@ -47,6 +47,25 @@ namespace SistemaVenda.Controllers
 
         public IActionResult Grafico()
         {
+            List<GraficoProdutos> lista = new GraficoProdutos().RetornarGrafico();
+            string valores = "";
+            string labels = "";
+            string cores = "";
+            Random random = new Random();
+
+            // Percorre a lista de itens para compor o gráfico
+            for (int i = 0; i < lista.Count; i++)
+            {
+                valores += lista[i].QtdeVendido.ToString() + ",";
+                labels += "'" + lista[i].DescricaoProduto.ToString() + "',";
+                // Cores aleatórias
+                cores += "'" + String.Format("#{0:X6}", random.Next(0x1000000)) + "',";
+            }
+
+            ViewBag.Valores = valores; 
+            ViewBag.Labels = labels;
+            ViewBag.Cores = cores; 
+
             return View();
         }
 

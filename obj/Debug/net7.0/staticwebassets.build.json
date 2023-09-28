@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2k8x73TQhCIZzNr3hdDNx7W4sbQ6bwpuhoVmQsnepL4=",
+  "Hash": "upb1v4wSi4opBp8mWBGIe1nyL8eqr/RQy+dcwRRXTAw=",
   "Source": "SistemaVenda",
   "BasePath": "_content/SistemaVenda",
   "Mode": "Default",
@@ -85,12 +85,12 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/clientes.png",
+      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/logout.png",
       "SourceId": "SistemaVenda",
       "SourceType": "Discovered",
       "ContentRoot": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/",
       "BasePath": "_content/SistemaVenda",
-      "RelativePath": "images/clientes.png",
+      "RelativePath": "images/logout.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,15 +99,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/clientes.png"
+      "OriginalItemSpec": "wwwroot/images/logout.png"
     },
     {
-      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/configuracoes.png",
+      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticacliente.png",
       "SourceId": "SistemaVenda",
       "SourceType": "Discovered",
       "ContentRoot": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/",
       "BasePath": "_content/SistemaVenda",
-      "RelativePath": "images/configuracoes.png",
+      "RelativePath": "images/tabuarusticacliente.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +116,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/configuracoes.png"
+      "OriginalItemSpec": "wwwroot/images/tabuarusticacliente.png"
     },
     {
-      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/produtos.png",
+      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticaconfiguracoes.png",
       "SourceId": "SistemaVenda",
       "SourceType": "Discovered",
       "ContentRoot": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/",
       "BasePath": "_content/SistemaVenda",
-      "RelativePath": "images/produtos.png",
+      "RelativePath": "images/tabuarusticaconfiguracoes.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,15 +133,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/produtos.png"
+      "OriginalItemSpec": "wwwroot/images/tabuarusticaconfiguracoes.png"
     },
     {
-      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/relatorios.png",
+      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticaproduto.png",
       "SourceId": "SistemaVenda",
       "SourceType": "Discovered",
       "ContentRoot": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/",
       "BasePath": "_content/SistemaVenda",
-      "RelativePath": "images/relatorios.png",
+      "RelativePath": "images/tabuarusticaproduto.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,15 +150,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/relatorios.png"
+      "OriginalItemSpec": "wwwroot/images/tabuarusticaproduto.png"
     },
     {
-      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/vendas.png",
+      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticaregistrovendas.png",
       "SourceId": "SistemaVenda",
       "SourceType": "Discovered",
       "ContentRoot": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/",
       "BasePath": "_content/SistemaVenda",
-      "RelativePath": "images/vendas.png",
+      "RelativePath": "images/tabuarusticaregistrovendas.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,15 +167,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/vendas.png"
+      "OriginalItemSpec": "wwwroot/images/tabuarusticaregistrovendas.png"
     },
     {
-      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/vendedores.png",
+      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticarelatorio.png",
       "SourceId": "SistemaVenda",
       "SourceType": "Discovered",
       "ContentRoot": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/",
       "BasePath": "_content/SistemaVenda",
-      "RelativePath": "images/vendedores.png",
+      "RelativePath": "images/tabuarusticarelatorio.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,7 +184,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/vendedores.png"
+      "OriginalItemSpec": "wwwroot/images/tabuarusticarelatorio.png"
+    },
+    {
+      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticavendedor.png",
+      "SourceId": "SistemaVenda",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/",
+      "BasePath": "_content/SistemaVenda",
+      "RelativePath": "images/tabuarusticavendedor.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/tabuarusticavendedor.png"
     },
     {
       "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/js/site.js",

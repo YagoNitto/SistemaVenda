@@ -1,1 +1,41 @@
-<h2>Gráfico</h2>
+<div style="width: 40%;">
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+	
+const DATA_COUNT = 5;
+const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
+
+const data = {
+  labels: [@Html.Raw(ViewBag.Labels)],
+  datasets: [
+    {
+      label: 'Dataset 1',
+      data: [@Html.Raw(ViewBag.Valores)],
+    }
+  ]
+};
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: data,
+    options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Pie Chart'
+      }
+    }
+  }
+  });
+
+  
+</script>

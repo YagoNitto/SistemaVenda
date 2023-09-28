@@ -13,28 +13,32 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/clientes.png",
-      "PackagePath": "staticwebassets/images/clientes.png"
+      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/logout.png",
+      "PackagePath": "staticwebassets/images/logout.png"
     },
     {
-      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/configuracoes.png",
-      "PackagePath": "staticwebassets/images/configuracoes.png"
+      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticacliente.png",
+      "PackagePath": "staticwebassets/images/tabuarusticacliente.png"
     },
     {
-      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/produtos.png",
-      "PackagePath": "staticwebassets/images/produtos.png"
+      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticaconfiguracoes.png",
+      "PackagePath": "staticwebassets/images/tabuarusticaconfiguracoes.png"
     },
     {
-      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/relatorios.png",
-      "PackagePath": "staticwebassets/images/relatorios.png"
+      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticaproduto.png",
+      "PackagePath": "staticwebassets/images/tabuarusticaproduto.png"
     },
     {
-      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/vendas.png",
-      "PackagePath": "staticwebassets/images/vendas.png"
+      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticaregistrovendas.png",
+      "PackagePath": "staticwebassets/images/tabuarusticaregistrovendas.png"
     },
     {
-      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/vendedores.png",
-      "PackagePath": "staticwebassets/images/vendedores.png"
+      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticarelatorio.png",
+      "PackagePath": "staticwebassets/images/tabuarusticarelatorio.png"
+    },
+    {
+      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/tabuarusticavendedor.png",
+      "PackagePath": "staticwebassets/images/tabuarusticavendedor.png"
     },
     {
       "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/js/site.js",
