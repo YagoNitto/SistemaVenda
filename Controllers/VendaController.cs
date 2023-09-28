@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SistemaVenda.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace SistemaVenda.Controllers
 {
     public class VendaController : Controller
     {
-        private readonly ILogger<VendaController> _logger;
+        private IHttpContextAccessor httpContext;
 
-        public VendaController(ILogger<VendaController> logger)
+        // Recebe o contexto HTTP via injeção de dependência
+        public VendaController(IHttpContextAccessor HttpContextAccessor)
         {
-            _logger = logger;
+            httpContext = HttpContextAccessor;
         }
 
         [HttpGet]
@@ -35,6 +37,7 @@ namespace SistemaVenda.Controllers
         [HttpPost]
         public IActionResult Registrar(VendaModel venda)
         {
+            venda.Vendedor_Id = httpContext.HttpContext.Session.GetString("IdUsuarioLogado");
             venda.Inserir();
             CarregarDados();
             return View();

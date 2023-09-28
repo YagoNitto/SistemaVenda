@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Menu">SistemaVenda</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Menu"><img src="~/images/logo.png" alt="logo" style="width: 20%;"> Ottin Wood Art</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
                     </ul> *@
                     @using Microsoft.AspNetCore.Http
                     @inject IHttpContextAccessor HttpContextAcessor
-                    <div id="NomeUsuarioLogado"></div>
+                    <div id="NomeUsuarioLogado" class="text-right"></div>
                 </div>
             </div>
         </nav>
@@ -44,7 +44,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - SistemaVenda
+            &copy; 2023 - OttinWoodArt
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/bglogin.jpg",
+      "PackagePath": "staticwebassets/images/bglogin.jpg"
+    },
+    {
+      "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/logo.png",
+      "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
       "Id": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/logout.png",
       "PackagePath": "staticwebassets/images/logout.png"
     },

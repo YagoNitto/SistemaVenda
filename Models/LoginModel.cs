@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 using SistemaVenda.Uteis;
 
 namespace SistemaVenda.Models
@@ -22,9 +23,15 @@ namespace SistemaVenda.Models
 
         public bool ValidarLogin()
         {
-            string sql = $"select id, nome from Vendedor where email = '{Email}' and senha = '{Senha}'";
+            string sql = $"select id, nome from Vendedor where email = @email and senha = @senha";
+            MySqlCommand Command = new MySqlCommand();
+            Command.CommandText = sql;
+            Command.Parameters.AddWithValue("@email", Email);
+            Command.Parameters.AddWithValue("@senha", Senha);
+
             DAL objDAL = new DAL();
-            DataTable dt = objDAL.RetDataTable(sql);
+            
+            DataTable dt = objDAL.RetDataTable(Command);
             if (dt.Rows.Count == 1)
             {
                 Id = dt.Rows[0]["ID"].ToString();

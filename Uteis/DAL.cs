@@ -28,6 +28,15 @@ namespace SistemaVenda.Uteis
             return data;
         }
 
+        public DataTable RetDataTable(MySqlCommand Command)
+        {
+            DataTable data = new DataTable();
+            Command.Connection = Connection;
+            MySqlDataAdapter da = new MySqlDataAdapter(Command);
+            da.Fill(data);
+            return data;
+        }
+
         // Parâmetro do tipo string contendo INSERT, UPDATE E DELETE
         public void ExecutarComandoSQL(string sql)
         {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "upb1v4wSi4opBp8mWBGIe1nyL8eqr/RQy+dcwRRXTAw=",
+  "Hash": "NnrgraOUbS6yX2f6GnyHrRdJqqtVgmwSih9GjT5W5nM=",
   "Source": "SistemaVenda",
   "BasePath": "_content/SistemaVenda",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/bglogin.jpg",
+      "SourceId": "SistemaVenda",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/",
+      "BasePath": "_content/SistemaVenda",
+      "RelativePath": "images/bglogin.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/bglogin.jpg"
+    },
+    {
+      "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/logo.png",
+      "SourceId": "SistemaVenda",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/",
+      "BasePath": "_content/SistemaVenda",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/logo.png"
     },
     {
       "Identity": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/wwwroot/images/logout.png",

@@ -24160,6 +24160,11 @@
       "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Venda/Registrar.cshtml",
       "TargetPath": "Views\\Venda\\Registrar.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Shared/_LayoutLogin.cshtml",
+      "TargetPath": "Views\\Shared\\_LayoutLogin.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }
