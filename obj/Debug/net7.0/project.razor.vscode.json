@@ -24062,11 +24062,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/yago/Documentos/UdemyProjetos/SistemaVenda/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

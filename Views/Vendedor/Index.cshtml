@@ -28,7 +28,10 @@
     </tbody>
 </table>
 <br />
-<button class="btn btn-block btn-primary" type="button" onclick="Cadastrar()">Cadastrar Vendedor</button>
+<button class="btn btn-block btn-success" type="button" onclick="Cadastrar()">Cadastrar Vendedor</button>
+<br><br><br>
+<button class="btn btn-block btn-primary" type="button" onclick="Voltar()">Voltar</button>
+
 
 <script>
     function Cadastrar()
@@ -44,5 +47,10 @@
     function Excluir(id)
     {
         window.location.href = "../Vendedor/Excluir/" + id;
+    }
+
+    function Voltar()
+    {
+        window.location.href = "../Home/Menu"
     }
 </script>

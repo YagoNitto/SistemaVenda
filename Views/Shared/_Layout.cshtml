@@ -7,10 +7,24 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SistemaVenda.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <style>
+        .bg-custom {
+            background-color: gray;
+        }
+
+        .social-icon {
+            margin-left: 15px;
+            font-size: 24px;
+            color: white;
+        }
+    </style>
 </head>
 <body onload="CarregaUsuarioLogado()">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-custom border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Menu"><img src="~/images/logo.png" alt="logo" style="width: 20%;"> Ottin Wood Art</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -31,7 +45,7 @@
                     </ul> *@
                     @using Microsoft.AspNetCore.Http
                     @inject IHttpContextAccessor HttpContextAcessor
-                    <div id="NomeUsuarioLogado" class="text-right"></div>
+                    <div id="NomeUsuarioLogado"></div>
                 </div>
             </div>
         </nav>
@@ -42,11 +56,20 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - OttinWoodArt
+    <footer class="border-top footer text-muted" style="background-color: gray;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <span style="color: black;">&copy; 2023 - OttinWoodArt</span>
+            </div>
+            
+            <div>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -59,7 +82,7 @@
             if (nome != "") //Usuário logado
             {
                 var divNome = document.getElementById("NomeUsuarioLogado");
-                divNome.innerHTML = "Olá, " + nome + "<a href='../Home/Login/0'>  (Sair)</a>";
+                divNome.innerHTML = "Olá, " + nome + "<a href='../Home/Login/0'>   <img src='" + '@Url.Content("~/images/logout.png")' + "' width='15' height='15'/></a>";
                 divNome.style = "color: #000000";
             }
             else // Usuário não logado

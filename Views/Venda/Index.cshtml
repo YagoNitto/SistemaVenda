@@ -26,11 +26,19 @@
     </tbody>
 </table>
 <br />
-<button class="btn btn-block btn-primary" type="button" onclick="Cadastrar()">Registrar Vendas</button>
+<button class="btn btn-block btn-success" type="button" onclick="Cadastrar()">Registrar Vendas</button>
+<br><br><br>
+<button class="btn btn-block btn-primary" type="button" onclick="Voltar()">Voltar</button>
+
 
 <script>
     function Cadastrar()
     {
         window.location.href = "../Venda/Registrar";
+    }
+
+    function Voltar()
+    {
+        window.location.href = "../Home/Menu"
     }
 </script>
